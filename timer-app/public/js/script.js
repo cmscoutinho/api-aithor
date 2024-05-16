@@ -8,23 +8,23 @@ stopButton.addEventListener('click', stopTimer);
 resetButton.addEventListener('click', resetTimer);
 
 async function fetchTimer() {
-  const response = await fetch('http://localhost:3000/timer');
+  const response = await fetch('/api/timer');
   const data = await response.json();
   updateTimerDisplay(data.elapsedTime);
 }
 
 async function startTimer() {
-  await fetch('http://localhost:3000/start', { method: 'POST' });
+  await fetch('/api/start', { method: 'POST' });
   fetchTimer();
 }
 
 async function stopTimer() {
-  await fetch('http://localhost:3000/stop', { method: 'POST' });
+  await fetch('/api/stop', { method: 'POST' });
   fetchTimer();
 }
 
 async function resetTimer() {
-  await fetch('http://localhost:3000/reset', { method: 'POST' });
+  await fetch('/api/reset', { method: 'POST' });
   fetchTimer();
 }
 
