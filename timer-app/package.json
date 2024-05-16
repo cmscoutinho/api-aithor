@@ -1,9 +1,8 @@
 {
   "name": "timer-app",
   "version": "1.0.0",
-  "main": "api/server.js",
   "scripts": {
-    "start": "node api/server.js"
+    "start": "node api/timer.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
