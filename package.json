@@ -7,6 +7,10 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.19.2"
-  }
+  },
+  "description": "��R\u0000E\u0000A\u0000D\u0000M\u0000E\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
-
